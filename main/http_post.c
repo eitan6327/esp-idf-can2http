@@ -129,6 +129,7 @@ static void http_rest_with_url(char * path, char * post_data)
 	// POST
 	// no need to change url
 	//esp_http_client_set_url(client, "http://192.168.10.43:8000/post");
+	esp_http_client_set_url(client, "http://192.168.86.233:8000/post");
 	esp_http_client_set_method(client, HTTP_METHOD_POST);
 	esp_http_client_set_header(client, "Content-Type", "application/json");
 	esp_http_client_set_post_field(client, post_data, strlen(post_data));
